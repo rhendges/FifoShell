@@ -26,7 +26,7 @@ stdout = "/dev/shm/output.%s" % (session)
 espera = int(args.t)
 headers = {"User-Agent" : (args.a)}
 
-#
+#Thread de leitura de output de comandos interativos
 
 class ReadThreads(object):
 	def __init__(self, interval=1):
